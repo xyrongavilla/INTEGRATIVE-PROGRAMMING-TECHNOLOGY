@@ -1,0 +1,10 @@
+1. Difference between readyState and status:
+   - The readyState is the one who shows or tracks the progress of request (example 4,it means that the request is complete).
+   - After the readyState the next that will check is the status. It is the HTTP response code or the result of response (example 200, it means the request is successful).
+
+2. Making the request asynchronous:
+   - By setting the third parameter of xhr.open() to true, e.g., xhr.open("GET", url, true) it means asynchronus otherwise ift it's false it will be sychronus.
+
+3. Why asynchronous communication is recommended:
+   - It is recommended to avoid or prevents the webpage from freezing while waiting for a response.
+   - It also allows the users to keep interacting with the page while data loads in the background.
