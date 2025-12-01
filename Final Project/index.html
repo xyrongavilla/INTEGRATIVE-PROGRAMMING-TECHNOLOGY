@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Brew</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo-container">
+        <img src="images/logo.png" class="brand-logo">
+        <div class="logo-text">CAFE BREW</div>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about-section">ABOUT</a>
+        <a href="#menu-section">MENU</a>
+        <a href="#creators-section">CREATORS</a>
+        <a href="#contact-section">CONTACT</a>
+    </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="hero-left">
+        
+        <h1>Welcome to Cafe Brew</h1>
+
+        <p>
+            Premium Coffee • Fresh Pastries • Crafted With Passion<br>
+            A cozy place for studying, meeting friends, and bonding in calm, peaceful vibes.
+        </p>
+
+        <button class="shop-btn" onclick="location.href='menu.html'">Order Now</button>
+    </div>
+
+    <div class="hero-right">
+        <img src="images/Coffee-cup-and-coffee-beans-on-transparent-background-PNG.png" 
+             class="hero-img float">
+    </div>
+</section>
+
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+
+<!-- ABOUT SECTION -->
+<section id="about-section" class="about-section">
+    <div class="about-wrapper">
+
+        <img src="images/about us.jpg" class="about-img">
+
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                Inspired by the Starbucks experience, Cafe Brew delivers premium handcrafted beverages 
+                and fresh pastries — brewed with passion daily. Our mission is to serve high-quality drinks,
+                pastries, and snacks that bring comfort and energy to your day. We aim to create a warm and 
+                welcoming space where anyone can relax, study, work, or simply enjoy meaningful moments.
+                At Cafe Brew, every cup is crafted with care, every bite is made fresh, and every visit is 
+                meant to feel like home.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+
+<!-- MENU SECTION -->
+<section id="menu-section" class="menu-preview-section">
+    <h2 class="section-title">Menu</h2>
+
+    <div class="menu-preview-container">
+
+        <div class="menu-box">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="menu-img">
+            <h3>COFFEE</h3>
+        </div>
+
+        <div class="menu-box">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" class="menu-img">
+            <h3>PASTRY</h3>
+        </div>
+
+        <div class="menu-box">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" class="menu-img">
+            <h3>FOODS</h3>
+        </div>
+
+    </div>
+
+    <button class="shop-btn" onclick="location.href='menu.html'">View Full Menu</button>
+</section>
+
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+
+<!-- CREATORS SECTION -->
+<section id="creators-section" class="creators-section">
+    <h2 class="section-title">Meet the Creators</h2>
+
+    <div class="creator-container">
+
+        <div class="creator-card">
+            <img src="images/April.jpg" class="creator-img">
+            <h3>Aprilyn D. Timkang</h3>
+            <p>Front-End Developer</p>
+            <p>UI Designer</p>
+        </div>
+
+        <div class="creator-card">
+            <img src="images/jocelyn.jpg" class="creator-img">
+            <h3>Jocelyn Lobos</h3>
+            <p>Front-End Developer</p>
+            <p>UI Designer</p>
+        </div>
+
+        <div class="creator-card">
+            <img src="images/xyrll.jpg" class="creator-img">
+            <h3>Xyrll Ronggavilla</h3>
+            <p>Back-End Developer</p>
+        </div>
+
+        <div class="creator-card">
+            <img src="images/rizza.jpg" class="creator-img"> <!-- FIXED FILE NAME -->
+            <h3>Rizza May Ligad</h3>
+            <p>Back-End Developer</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact-section" class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-container">
+        
+        <div class="contact-form">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter your phone number">
+
+            <label>Message</label>
+            <textarea placeholder="Write your message here..."></textarea>
+
+            <button class="send-btn">Send</button>
+        </div>
+
+        <div class="contact-info">
+            <h3>Business Information</h3>
+            <p><b>Address:</b> BF Resort Las Pinas City Talon 2</p>
+            <p><b>Email:</b> cafebrew@gmail.com</p>
+            <p><b>Phone:</b> 0912 345 6789</p>
+            <p><b>Hours:</b></p>
+            <ul>
+                <li>Mon–Fri: 8AM–9PM</li>
+                <li>Sat: 9AM–10PM</li>
+                <li>Sun: Closed</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Cafe Brew. Inspired by Starbucks.</p>
+</footer>
+
+</body>
+</html>

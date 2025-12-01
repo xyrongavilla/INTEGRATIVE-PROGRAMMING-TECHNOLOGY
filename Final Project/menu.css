@@ -1,0 +1,244 @@
+/* ===============================
+   GOOGLE FONTS
+================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@600;700;800&display=swap');
+
+/* ===============================
+   GLOBAL STYLE
+================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e3932;
+    color: #d8e6df;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===============================
+   HEADER
+================================*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 50px;
+    background: rgba(10, 25, 20, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #0c1f1a;
+    padding: 3px;
+    outline: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    color: #e8d4b0;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d8e6df;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e8d4b0;
+}
+
+/* MOBILE TOGGLE */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #e8d4b0;
+    cursor: pointer;
+}
+
+/* ===============================
+   MENU HERO
+================================*/
+.menu-hero {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.menu-hero h1 {
+    font-size: 48px;
+    font-family: "Raleway", sans-serif;
+    color: #e8d4b0;
+}
+
+.menu-hero p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+/* ===============================
+   TABS
+================================*/
+.tabs {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.tab-btn {
+    padding: 12px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background: #0f2a23;
+    color: #e8d4b0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn:hover,
+.active-btn {
+    background: #144d3a;
+}
+
+/* ===============================
+   TAB CONTENT AREA
+================================*/
+.tab-content {
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 38px;
+    font-family: "Raleway", sans-serif;
+    color: #e8d4b0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   GRID
+================================*/
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.item {
+    width: 300px;
+    background: #0f2a23;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    background: #144d3a;
+}
+
+.item img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.item h3 {
+    margin-top: 12px;
+    color: #e8d4b0;
+    font-family: "Raleway", sans-serif;
+}
+
+.item p {
+    color: #d6eadd;
+    margin: 6px 0;
+}
+
+/* ADD TO CART BUTTON */
+.item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00754a;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item button:hover {
+    opacity: 0.85;
+}
+
+/* ===============================
+   FOOTER
+================================*/
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #0c1f1a;
+    color: #d8e6df;
+    margin-top: 60px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================*/
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        right: 20px;
+        background: #0f2a23;
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 60px;
+        border-radius: 10px;
+        gap: 15px;
+    }
+
+    nav.show { display: flex; }
+    .menu-toggle { display: block; }
+}

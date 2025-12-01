@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Brew – Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <img src="images/logo.png" class="brand-logo">
+        <div class="logo-text">CAFE BREW</div>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
+        <a href="index.html#home">HOME</a>
+        <a href="index.html#about-section">ABOUT</a>
+        <a href="index.html#menu-section">MENU</a>
+        <a href="index.html#creators-section">CREATORS</a>
+        <a href="index.html#contact-section">CONTACT</a>
+    </nav>
+</header>
+
+<section class="menu-hero">
+    <h1>Order Menu</h1>
+    <p>Select your favorite drink, pastry & snacks or foods</p>
+</section>
+
+<!-- TABS -->
+<div class="tabs">
+    <button class="tab-btn active-btn" onclick="showTab('coffee')">COFFEE</button>
+    <button class="tab-btn" onclick="showTab('pastry')">PASTRY & SNACKS</button>
+    <button class="tab-btn" onclick="showTab('foods')">FOODS</button>
+</div>
+
+<!-- COFFEE TAB -->
+<div id="coffee" class="tab-content active">
+    <h2 class="section-title">Coffee</h2>
+
+    <div class="grid">
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1523942839745-7848c839b661">
+            <h3>Americano</h3>
+            <p>₱145</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Caramel Frappucinno.jpg">
+            <h3>Caramel Frappucinno</h3>
+            <p>₱180</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13">
+            <h3>Cappuccino</h3>
+            <p>₱140</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Java-Chip.jpg">
+            <h3>Java Chips</h3>
+            <p>₱150</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Matcha-Latte.jpg">
+            <h3>Matcha Latte</h3>
+            <p>₱200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Iced Coffee Caramel Vanilla.webp">
+            <h3>Iced Coffee Caramel Vanilla</h3>
+            <p>₱160</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- PASTRY TAB -->
+<div id="pastry" class="tab-content">
+    <h2 class="section-title">Pastry</h2>
+
+    <div class="grid">
+        <div class="item">
+            <img src="images/Cinnamon Rolls.jpg">
+            <h3>Cinnamon Rolls</h3>
+            <p>₱120</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/French Croissants.png">
+            <h3>French Croissants</h3>
+            <p>₱150</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/vanilla ice creams brownies.jpg">
+            <h3>Vanilla Ice Creams with Brownies</h3>
+            <p>₱145</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Glazed Donut.jpg">
+            <h3>Glazed Donut</h3>
+            <p>₱130</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Pistachio Cheesecakes.webp">
+            <h3>Pistachio Cheesecakes</h3>
+            <p>₱130</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Mocha Cupcake.jpg">
+            <h3>Mocha Cupcake</h3>
+            <p>₱120</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOODS TAB -->
+<div id="foods" class="tab-content">
+    <h2 class="section-title">Foods</h2>
+
+    <div class="grid">
+        <div class="item">
+            <img src="images/Buttermilk-Pancakes.jpg">
+            <h3>ButterMilk Pancakes</h3>
+            <p>₱135</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Creamy Garlic Pasta.jpg">
+            <h3>Creamy Garlic Pasta</h3>
+            <p>₱140</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/Parmesan Ranch Potato.jpg">
+            <h3>Parmesan Ranch Potato</h3>
+            <p>₱120</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- NEW FOOD #1 -->
+        <div class="item">
+            <img src="images/Meat Pizza.jpg">
+            <h3>Meat Pizza</h3>
+            <p>₱150</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- NEW FOOD #2 -->
+        <div class="item">
+            <img src="images/Mango-chutney-campfire-cheese-toasties.jpg">
+            <h3>Mango chutney campfirecheese toasties</h3>
+            <p>₱150</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- NEW FOOD #3 -->
+        <div class="item">
+            <img src="images/French Fries.jpg">
+            <h3>French Fries</h3>
+            <p>₱110</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© 2025 Cafe Brew. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
